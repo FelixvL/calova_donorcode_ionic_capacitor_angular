@@ -1,4 +1,8 @@
 <div id="container">
-  <strong>{{ name }}</strong>
-  <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div id="divChart">
+    <canvas id="myChart"></canvas>
+</div>
+  <ion-item><ion-input [(ngModel)]="felixprobeersel" ></ion-input></ion-item>
+  <ion-button (click)="naardemethode()">klik hier</ion-button>
+  <p>Je hebt getypt: <b>{{felixprobeersel}}</b></p>
 </div>
